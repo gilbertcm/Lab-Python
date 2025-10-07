@@ -5,14 +5,14 @@ numero = int(input("Digite um número ? "))
 print(f"seu numero é o {numero}, seu antecessor é o {(numero-1)} e seu sucessor é o {(numero+1)}")
 
 
-print("num é {}, o dobro é {}, o triplo é {}, a raiz quadrada é {}"
+print("num é {}, o dobro é {}, o triplo é {}, a raiz quadrada é {:.2f}"
       .format(numero, (numero*2), (numero*3), (numero**(1/2))))
 
 #média aritmetica
 contador = 0
 soma = 0
 while True:
-    num = int(input("digite um numero ? "))
+    num = int(input("digite um numero ('0' para sair) ? "))
     if num == 0:
         break
     soma += num
